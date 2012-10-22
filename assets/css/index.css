@@ -579,6 +579,9 @@ footer.site ul.call-to-action li.or {
 footer.site ul.call-to-action li a.button {
   width: 160px;
 }
+footer.site ul.call-to-action li a.learn-more {
+  font-family: Source Sans Pro;
+}
 footer.site ul.call-to-action li a.learn-more:hover {
   text-decoration: underline;
 }
