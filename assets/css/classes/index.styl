@@ -1,42 +1,5 @@
-blue-dark = hsl(215,30,30)
-blue-medium = hsl(215,30,60)
-blue-gray = hsl(212,14,60)
-blue-anchor = hsl(196,63,55)
-blue-hover = hsl(196,63,64)
-anchor = blue-anchor
-hover = blue-hover
-
-.clearfix
-  clearfix()
-
-.right
-  float right
-
-.left
-  float left
-
-.button
-  display inline-block
-  background linear-gradient(top, m250, m220)
-  border-radius 5px
-  border 1px solid #ccc
-  box-shadow b7 0 0 5px, inset #fff 0 0 5px
-  padding 0 1em
-  box-sizing border-box
-  font 1em/2 Source Sans Pro
-  color #555
-  text-align center
-  text-shadow #fff 0 1px 0
-
-  &:hover
-    background linear-gradient(top, m250, m230)
-    color #555
-
-  &.button-blue
-    background linear-gradient(top, hsl(215,30,50), blue-dark)
-    box-shadow b7 0 0 5px
-    color #fff
-    text-shadow b30 0 1px 0
-    border 1px solid blue-dark
-    &:hover
-      background linear-gradient(top, hsl(215,30,50), hsl(215,30,40))
+@import 'colors'
+@import 'buttons'
+@import 'model.ipad'
+@import 'model.mbp'
+@import 'model.website'
