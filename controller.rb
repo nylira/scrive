@@ -1,4 +1,7 @@
 require 'stylus'
-Stylus.use(:nib)
+require 'erb'
+
+Stylus.use :nib
+Stylus.compile(File.new('css/index.css.styl'))
 
 ignore /\/*.md/
