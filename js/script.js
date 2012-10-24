@@ -8,6 +8,4 @@ $('ul.tabs li.tab').click(function() {
   $(tab_content).addClass('active');
 })
 
-$('select').select2();
-
 });

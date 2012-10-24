@@ -1,0 +1,60 @@
+ul.select
+  position relative
+  height 2em
+  width 160px
+  background m252
+  box-shadow inset b10 1px 1px 2px
+  border 1px solid #ccc
+  border-radius 3px
+  text-align left
+  cursor pointer
+  &:after
+    display block
+    position absolute
+    top 8px
+    right 7px
+    content ''
+    width 15px
+    height 15px
+    background url(../img/select-arrow.png) no-repeat
+  li.option
+    width 158px
+    padding 0 .75em
+    font-family source
+    line-height 30px
+    color blue-dark
+      
+    &:not(:first-of-type)
+      display none
+  &:hover
+    &:after
+      display none
+    li
+      width 160px
+      margin -1px 0 0 -1px
+      display: block
+      background #fff
+      color txt
+      border-left 1px solid #ccc
+      border-right 1px solid #ccc
+      &.active
+        background m248
+      &:not(:first-of-type)
+        display block
+      &:first-of-type
+        border-radius 3px 3px 0 0
+        border 1px solid #ccc
+        border-bottom none
+      &:last-of-type
+        border-radius 0 0 3px 3px
+        border 1px solid #ccc
+        border-top none
+      &:hover
+        bg blue-bg
+
+  &.w200
+    width 200px
+    li
+      width 198px
+    &:hover li
+      width 200px
