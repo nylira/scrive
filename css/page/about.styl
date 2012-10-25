@@ -1,0 +1,57 @@
+body.about
+  header.site
+    nav
+      display block
+
+  section
+    h2
+      font-size 2em
+      text-align center
+      margin 0 0 2em
+      color blue-dark
+
+    &.intro
+      padding-top 0
+
+      .team-photo
+        background #ddd
+        width 960px
+        height 400px
+        mb 3em
+
+      .content
+        width 660px
+        float left
+        padding 0 40px 0 20px
+        h1
+          font-size 2em
+          font-weight bold
+          margin-bottom 1.5em
+        p
+          font-size 1.25em
+          font-family source
+
+      .video
+        float right
+        margin-top 3em
+        width 300px
+        height 180px
+        background #ddd
+        text-align center
+        font bold 2em/180px source
+        color #aaa
+
+    &.hire
+      p
+        font 1.5em/1.5 source
+        text-align center
+        margin 0
+        a:hover
+          text-decoration underline
+
+
+  .vcard
+    margin-left 20px
+    margin-bottom 3em
+    &:nth-of-type(2n)
+      margin-left 40px

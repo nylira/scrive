@@ -1,0 +1,44 @@
+.vcard
+  clearfix()
+  width 440px
+  float left
+
+  .photo
+    width 120px
+    height 120px
+    background #ddd
+    float left
+
+  .content
+    float left
+    padding-left 1em
+    width 320px
+
+    h3.fn
+      line-height 1.25em
+      font-weight bold
+
+    .category, .note
+      font-size 14px
+
+    .category
+      color blue-medium
+
+    .note
+      margin-top .5em
+      color dim
+      p
+        margin 0
+
+
+    .links
+      font-size 14px
+      clearfix()
+      li
+        float left
+        width 128px
+        a
+          color light
+          &:hover
+            text-decoration underline
+            color anchor

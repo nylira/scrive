@@ -1,0 +1,26 @@
+<div class="vcard">
+  <img class="photo" alt="Photo" src="img" width="120" height="120">
+  <div class="content">
+    <h3 class="fn"><%= fn rescue '' %></h3>
+    <% if defined? category %>
+      <div class="category"><%= category %></div>
+    <% end %>
+    <div class="note">
+      <p>Scrive är en tjänst för att e-signera offerter, avtal och andra typer av dokument.</p>
+    </div>
+    <ul class="links">
+      <% if defined? email %>
+        <li><a class="email" href="mailto:<%= email %>"><%= email %></a></li>
+      <% end %>
+      <% if defined? tel %>
+        <li><a class="tel" href="tel:<%= tel %>"><%= tel %></a></li>
+      <% end %>
+      <% if defined? linkedin %>
+        <li><a class="linkedin url" href="<%= linkedin %>">LinkedIn</a></li>
+      <% end %>
+      <% if defined? twitter %>
+        <li><a class="twitter url" href="<%= twitter %>">@username</a></li>
+      <% end %>
+    </ul><!--urls-->
+  </div><!--content-->
+</div><!--vcard-->

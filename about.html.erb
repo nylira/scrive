@@ -1,0 +1,53 @@
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'about' } %>
+<%= render 'partial/header.site.html.erb' %>
+
+<div class="content site">
+
+  <section class="intro">
+   <div class="container">
+      <img class="team-photo" src="#">
+      <div class="content">
+        <h1>This is Scrive.</h1>
+        <p class="bold">A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit.</p>
+        <p>A paragraph about Scrive. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi diam. Curabitur purus est, porttitor eu volutpat sit amet, congue lobortis nisi. Donec ut nunc enim. </p>
+      </div>
+      <div class="video">Video</div>
+    </div>
+  </section>
+
+
+  <section id="team-profiles">
+    <div class="container">
+      <h2>The Team</h2>
+      <% (1..10).each do |i| %>
+        <%= render 'partial/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
+      <% end %>
+    </div>
+  </section>
+
+  <section id="board-profiles">
+    <div class="container">
+      <h2>Board of Directors</h2>
+      <% (1..4).each do |i| %>
+        <%= render 'partial/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
+      <% end %>
+    </div>
+  </section>
+
+  <section id="investor-profiles">
+    <div class="container">
+      <h2>Investors</h2>
+      <% (1..5).each do |i| %>
+        <%= render 'partial/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="hire">
+    <p>Are you a nice person stuffed with skills? <a href="#">Apply for a job with us.</a>
+  </section>
+
+</div>
+
+<%= render 'partial/footer.site.html.erb' %>
+<%= render 'partial/footer.html.html.erb' %>
