@@ -1,0 +1,47 @@
+.content.site
+  clearfix()
+
+section
+  padding 3em 0
+  border-bottom 1px solid blue-border
+  clearfix()
+
+  h1
+    font-size 2em
+    color blue-dark
+
+  header
+    h1
+      margin-bottom .5em
+    p
+      font 1.5em/1.5 source
+      color blue-medium
+      margin 0 0 1.5em
+
+  &.search
+    .right
+
+    form
+      ul
+        float left
+        margin-left 1em
+
+section.simple
+  text-align center
+  p
+    font 1.5em/1.5 source
+    text-align center
+    margin 0
+    color blue-dark
+    a:hover
+      text-decoration underline
+  ul
+    li
+      display inline-block
+      padding-right .5em
+      a.button
+        width 160px
+      a.learn-more
+        font-family Source Sans Pro
+        &:hover
+          text-decoration underline
