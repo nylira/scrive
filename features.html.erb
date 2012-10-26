@@ -1,0 +1,152 @@
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'features' } %>
+<%= render 'partial/header.site.html.erb' %>
+
+<div class="content site">
+  <section class="features-grid">
+    <h1>Features</h1>
+    <ul class="nav">
+      <li><a href="#feature-integration">
+        <div class="img">Icon</div>
+        <span class="label">Integration</span>
+      </a></li>
+      <li><a href="#feature-hardware">
+        <div class="img">Icon</div>
+        <span class="label">Hardware</span>
+      </a></li>
+      <li><a href="#feature-security">
+        <div class="img">Icon</div>
+        <span class="label">Security</span>
+      </a></li>
+      <li><a href="#feature-archive">
+        <div class="img">Icon</div>
+        <span class="label">The Archive</span>
+      </a></li>
+      <li><a href="#feature-ux">
+        <div class="img">Icon</div>
+        <span class="label">User Experience</span>
+      </a></li>
+      <li><a href="#feature-team">
+        <div class="img">Icon</div>
+        <span class="label">Our Team</span>
+      </a></li>
+      <li><a href="#feature-01">
+        <div class="img">Icon</div>
+        <span class="label">Another Feature</span>
+      </a></li>
+      <li><a href="#feature-02">
+        <div class="img">Icon</div>
+        <span class="label">Yet Another Feature</span>
+      </a></li>
+      <li><a href="#feature-03">
+        <div class="img">Icon</div>
+        <span class="label">Last Feature</span>
+      </a></li>
+    </ul>
+  </section>
+
+  </section>
+  <div class="sidebar">
+    <nav data-spy="affix" data-offset-top="1024">
+      <div id="navbar">
+        <ul class="nav">
+          <li><a href="#feature-integration">Integration</a></li>
+          <li><a href="#feature-hardware">Hardware</a></li>
+          <li><a href="#feature-security">Security</a></li>
+          <li><a href="#feature-archive">The Archive</a></li>
+          <li><a href="#feature-ux">User Experience</a></li>
+          <li><a href="#feature-team">Our Team</a></li>
+          <li><a href="#feature-01">Another Feature</a></li>
+          <li><a href="#feature-02">Yet Another Feature</a></li>
+          <li><a href="#feature-03">Last Feature</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="features">
+    <section id="feature-integration">
+      <header>
+        <h1>Integration</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-hardware">
+      <header>
+        <h1>Hardware</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-security">
+      <header>
+        <h1>Security</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-archive">
+      <header>
+        <h1>The Archive</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-ux">
+      <header>
+        <h1>User Experience</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-team">
+      <header>
+        <h1>Our Team</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-01">
+      <header>
+        <h1>Another Feature</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-02">
+      <header>
+        <h1>Yet Another Feature</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+    <section id="feature-03">
+      <header>
+        <h1>Last Feature</h1>
+        <p class="bold">All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <% (1..6).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% end %>
+    </section>
+  </div>
+</div>
+
+<%= render 'partial/footer.site.html.erb' %>
+<%= render 'partial/footer.html.html.erb' %>

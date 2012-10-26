@@ -1,0 +1,86 @@
+body.features
+
+  section.features-grid
+    padding-bottom .5em
+    h1
+      margin-bottom 1.5em
+
+    ul
+      border-top 1px solid blue-border
+      padding-top .5em
+      li
+        float left
+        width 320px
+        height 240px
+        border-right 1px solid blue-border
+        border-bottom 1px solid blue-border
+        &:nth-of-type(3n)
+          border-right none
+        &:nth-last-child(-n+3)
+          border-bottom none
+        a
+          display block
+          width 320px
+          height 240px
+          text-align center
+          transition .15s ease-in-out all
+          padding 3em 0 0
+          .img
+            margin 0 auto .75em
+            width 4em
+            height 4em
+            border-radius 2em
+            background blue-dark
+            font bold 1.5em/4em source
+            color w50
+            transition .15s ease-in-out background
+          .label
+            display block
+            font 1.5em/1.5 source
+            color blue-medium
+          &:hover
+            .img
+              background #f59c00
+
+  .sidebar
+    width 240px
+    float left
+    padding-top 3em
+    ul
+      li
+        margin-bottom 2px
+        a
+          width 200px
+          display block
+          padding 0 10px
+          line-height 2em
+          border-radius 5px
+        &:hover a,
+        &.active a
+          background blue-bg
+
+
+  .features
+    width 720px
+    float left
+
+  a.feature.media
+    display block
+    width 350px
+    margin-bottom 3em
+    &:hover
+      .read-more
+        text-decoration underline
+
+      color anchor
+    &:nth-of-type(2n)
+      margin-left 20px
+
+    img
+      width 100px
+      height 100px
+
+    .content
+      width 250px
+    .read-more
+      color anchor

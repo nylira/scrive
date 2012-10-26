@@ -1,11 +1,11 @@
-<div class="vcard">
+<div class="vcard media">
   <img class="photo" alt="Photo" src="img" width="120" height="120">
   <div class="content">
     <h3 class="fn"><%= fn rescue '' %></h3>
     <% if defined? category %>
-      <div class="category"><%= category %></div>
+      <div class="subheading category"><%= category %></div>
     <% end %>
-    <div class="note">
+    <div class="note body">
       <p>Scrive är en tjänst för att e-signera offerter, avtal och andra typer av dokument.</p>
     </div>
     <ul class="links">
