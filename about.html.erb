@@ -4,43 +4,35 @@
 <div class="content site">
 
   <section class="intro">
-   <div class="container">
-      <div class="team-photo">Team Photo</div>
-      <header>
-        <h1>This is Scrive.</h1>
-        <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit.</p>
-        <p>A paragraph about Scrive. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi diam. Curabitur purus est, porttitor eu volutpat sit amet, congue lobortis nisi. Donec ut nunc enim. </p>
-      </header>
-      <div class="video">Video</div>
-    </div>
+    <div class="team img">Team Photo</div>
+    <header>
+      <h1>This is Scrive.</h1>
+      <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit.</p>
+      <p>A paragraph about Scrive. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi diam. Curabitur purus est, porttitor eu volutpat sit amet, congue lobortis nisi. Donec ut nunc enim. </p>
+    </header>
+    <div class="video img">Video</div>
   </section>
 
 
   <section id="team-profiles">
-    <div class="container">
-      <h1>The Team</h1>
-      <% (1..10).each do |i| %>
-        <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
-      <% end %>
-    </div>
+    <h1>The Team</h1>
+    <% (1..10).each do |i| %>
+      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
+    <% end %>
   </section>
 
   <section id="board-profiles">
-    <div class="container">
-      <h1>Board of Directors</h1>
-      <% (1..4).each do |i| %>
-        <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
-      <% end %>
-    </div>
+    <h1>Board of Directors</h1>
+    <% (1..4).each do |i| %>
+      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
+    <% end %>
   </section>
 
   <section id="investor-profiles">
-    <div class="container">
-      <h1>Investors</h1>
-      <% (1..5).each do |i| %>
-        <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
-      <% end %>
-    </div>
+    <h1>Investors</h1>
+    <% (1..5).each do |i| %>
+      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
+    <% end %>
   </section>
 
   <section class="simple">
