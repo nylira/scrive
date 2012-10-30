@@ -8,4 +8,12 @@ $('ul.tabs li.tab').click(function() {
   $(tab_content).addClass('active');
 })
 
+$('#more-videos').toggle(function() {
+  $(this).html("Fewer videos &rsaquo;");
+  $('ul.more.videos').slideToggle();
+}, function() {
+  $(this).html("More videos &rsaquo;");
+  $('ul.more.videos').slideToggle();
+})
+
 });

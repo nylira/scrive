@@ -1,0 +1,71 @@
+body.cases
+
+  section.videos
+    padding 80px 40px 40px 80px
+
+    a#more-videos
+      display block
+      width 160px
+      margin 0 auto
+      text-align center
+      &:hover
+        text-decoration underline
+
+    ul.videos
+      clearfix()
+      &.more
+        display none
+        &.active
+          display block
+      li
+        width 240px
+        float left
+        margin 0 40px 40px 0
+
+  article
+    padding 0 120px
+    clearfix()
+
+    .img, img
+      float left
+      width 160px
+      height 160px
+      line-height 160px
+
+    .content
+      float left
+      width 540px
+      padding-left 40px
+      h1
+        margin 0 0 .25em
+      .body
+        color light
+        p.bold
+          margin 0 0 .5em
+          font-weight normal
+          color txt
+
+    ul.icons
+      clearfix()
+      li
+        float left
+        margin-right 1.5em
+        a
+          display block
+          line-height 2em
+          height 2em
+          clearfix()
+          .icon
+            width 24px
+            height 24px
+            margin 4px 8px 4px 4px
+            border-radius 12px
+            background blue-icon
+            float left
+            font 8px/24px Verdana
+            color w75
+          .label
+            float left
+          &:hover
+            .label
+              text-decoration underline

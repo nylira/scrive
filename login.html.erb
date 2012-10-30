@@ -1,0 +1,25 @@
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'login' } %>
+
+<form>
+  <h1><img src="img/logo960.png" width="160"></h1>
+  <ul class="fields">
+    <li class="field">
+      <input id="input-email" type="text" placeholder="Email">
+    </li>
+    <li class="field">
+      <input id="input-password" type="password" placeholder="Password">
+    </li>
+    <li class="field submit">
+      <input type="submit" value="Log In &rsaquo;">
+    </li>
+    <li class="field checkbox">
+      <input id="remember-password" type="checkbox">
+      <label for="remember-password">Remember my password</label>
+    </li>
+    <li class="field link">
+      <a href="#">Forgot password &rsaquo;</a>
+    </li>
+  </ul>
+</form>
+
+<%= render 'partial/footer.html.html.erb' %>
