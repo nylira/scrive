@@ -1,56 +1,96 @@
 header.site
-  height 120px
-  position relative
-  border-bottom 1px solid blue-border
-
-  #branding
-    width 320px
-    float left
-    clearfix()
-    #logo
-      d block
-      float left
-      margin 40px 10px
-      width 160px
-      height 40px
-
-    #tagline
-      float left
-      margin-top 44px
-      line-height 1.6em
-      margin-left -20px
-      font-weight normal
-
-  .navigation
-    width 640px
-    float left
-
-  nav, menu
-    float right
-    margin-top 44px
-    margin-right 10px
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index 999999
+  background #fff
+  box-shadow b40 0 0 .4em
+  border-top 4px solid m243
 
   nav
+    background linear-gradient(top, m252, m243)
+    position relative
+    border-top 1px solid #aaa
     ul
+      clearfix()
+      height 4em
+      width 960px
+      margin 0 auto
+      position relative
       li
         float left
-        padding .1em .5em
+        width 92px
+        border-right 1px solid #ddd
         a
           display block
-          font-family source
-          font-size 1.25em
-          line-height 1.4em
-          border-bottom 2px solid transparent
+          font 1em/4 source
+          text-align center
+          color dim
+          text-shadow #fff 0 1px 0
+          height 68px
+          margin-top -5px
+          border-top 5px solid transparent
           &:hover
-            border-bottom-color anchor
+            border-top-color blue-dark
+
+        &.login
+          width 88px
+          border-right none
+
+        &.loginx
+          padding .8em .5em
+
+          a.button-embed
+            margin 0
+            border none
+            font 1em/2.4 source
+            height 2.4em
+            padding 0 .5em
+            border 1px solid #ddd
+            border-radius 5px
+            background linear-gradient(top, hsl(215,30,50), blue-dark)
+            box-shadow #fff 0 1px 0px
+            color #fff
+            text-shadow b30 0 1px 0
+
+
+        &#branding
+          clearfix()
+          width 320px
+
+          #logo
+            display block
+            float left
+            width 320px
+            text-align left
+            img
+              margin 21px 1em
+
+          #tagline
+            float left
+            margin-top 24px
+            line-height 1.6em
+            margin-left -20px
+            font-weight normal
+            display none
+
 
 body.features #page-features
+body.pricing #page-pricing
 body.article #page-features
 body.about #page-about
 body.cases #page-cases
-  color blue-dark
-  border-bottom-color blue-medium
+  background linear-gradient(top, m255, m243)
+  color txt
+  border-top-color blue-dark
 
-body.home, body.use-cases, body.learn-more
-  header.site nav
-    display none
+body.index
+  header.site 
+    li
+      display none
+      &#branding
+        display block
+        width 872px
+      &.login
+        display block
