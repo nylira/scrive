@@ -1,0 +1,32 @@
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'cases' } %>
+<%= render 'partial/header.site.html.erb' %>
+
+<div class="content site">
+
+<section class="videos">
+  <ul class="videos">
+    <% (1..3).each do |i| %>
+      <%= render 'media/case-video.html.erb', :locals => { :title => "Outline forms: Avanza"} %>
+    <% end %>
+  </ul>
+     
+  <ul class="more videos">
+    <% (1..6).each do |i| %>
+      <%= render 'media/case-video.html.erb', :locals => { :title => "Another video: Hidden"} %>
+    <% end %>
+  </ul>
+
+  <a id="more-videos" href="#">More videos &rsaquo;</a>
+
+</section>
+
+<% (1..3).each do |i| %>
+  <%= render 'partial/section.case-summary.html.erb', :locals => { :title => "Pad signing, Peace and Love"} %>
+<% end %>
+
+<%= render 'partial/section.signup.html.erb' %>
+
+</div>
+
+<%= render 'partial/footer.site.html.erb' %>
+<%= render 'partial/footer.html.html.erb' %>

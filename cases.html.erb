@@ -3,30 +3,73 @@
 
 <div class="content site">
 
-<section class="videos">
-  <ul class="videos">
-    <% (1..3).each do |i| %>
+  <section class="icon-grid">
+    <ul class="nav">
+      <li><a href="#feature-integration">
+        <div class="img">Icon</div>
+        <span class="label">Sign</span>
+      </a></li>
+      <li><a href="#feature-hardware">
+        <div class="img">Icon</div>
+        <span class="label">Send</span>
+      </a></li>
+      <li><a href="#feature-security">
+        <div class="img">Icon</div>
+        <span class="label">Integrate</span>
+      </a></li>
+    </ul>
+  </section>
+
+<section class="fixed-nav-list">
+
+  <div class="sidebar-fixed">
+    <nav data-spy="affix" data-offset-top="432">
+      <div class="sidebar-container" id="navbar">
+        <ul class="nav">
+          <li><a href="#top">All</a></li>
+          <li><a href="#case-sign">Sign</a></li>
+          <li><a href="#case-send">Send</a></li>
+          <li><a href="#case-integrate">Integrate</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div><!--sidebar-fixed-->
+
+  <div class="features">
+    <section id="case-sign">
+      <header>
+        <h1>Sign on touch device</h1>
+        <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
       <%= render 'media/case-video.html.erb', :locals => { :title => "Outline forms: Avanza"} %>
-    <% end %>
-  </ul>
-     
-  <ul class="more videos">
-    <% (1..6).each do |i| %>
-      <%= render 'media/case-video.html.erb', :locals => { :title => "Another video: Hidden"} %>
-    <% end %>
-  </ul>
-
-  <a id="more-videos" href="#">More videos &rsaquo;</a>
-
-</section>
-
-<% (1..3).each do |i| %>
-  <%= render 'partial/section.case-summary.html.erb', :locals => { :title => "Pad signing, Peace and Love"} %>
-<% end %>
+      <% (1..3).each do |i| %>
+        <%= render 'media/case.html.erb', :locals => { :title => "Sign on touch device case"} %>
+      <% end %>
+    </section>
+    <section id="case-send">
+      <header>
+        <h1>Send for signature</h1>
+        <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <%= render 'media/case-video.html.erb', :locals => { :title => "Outline forms: Avanza"} %>
+      <% (1..3).each do |i| %>
+        <%= render 'media/case.html.erb', :locals => { :title => "Send for signature case"} %>
+      <% end %>
+    </section>
+    <section id="case-integrate">
+      <header>
+        <h1>Integrate into website</h1>
+        <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+      </header>
+      <%= render 'media/case-video.html.erb', :locals => { :title => "Outline forms: Avanza"} %>
+      <% (1..3).each do |i| %>
+        <%= render 'media/case.html.erb', :locals => { :title => "Integrate into website case"} %>
+      <% end %>
+    </section>
+  </div>
+  </div>
 
 <%= render 'partial/section.signup.html.erb' %>
-
-</div>
 
 <%= render 'partial/footer.site.html.erb' %>
 <%= render 'partial/footer.html.html.erb' %>
