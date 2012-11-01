@@ -1,12 +1,7 @@
 <%= render 'partial/header.html.html.erb', :locals => { :body_class => 'index' } %>
 <%= render 'partial/header.site.html.erb' %>
 
-<div class="content site use-cases">
-  <div class="panel nav">
-    <h1 class="big">We solve all your e-signing needs.</h1>
-    <h2 class="big">Select your use case to see our solution.</h2>
-    <%= render 'partial/use-cases.nav.html.erb' %>
-  </div>
-  <%= render 'partial/section.cta.html.erb' %>
-</div>
+<%= render 'partial/section.use-cases-nav.html.erb' %>
+<%= render 'partial/section.cta.html.erb' %>
+
 <%= render 'partial/footer.html.html.erb' %>

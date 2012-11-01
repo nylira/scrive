@@ -13,10 +13,43 @@ section
   > header
     h1
       margin-bottom .5em
+      font-weight bold
     p
       font 1.5em/1.5 source
       color blue-medium
       margin 0 0 1.5em
+
+section.signup
+  background #fff
+  position relative
+  z-index 1000
+  box-shadow #fff 0 -2em 2em
+  border-top 1px solid blue-border
+  header
+    h1
+      text-align center
+      margin 0 0 1em
+  nav
+    ul
+      clearfix()
+      padding 1em 1em 0 0
+      li
+        width 294px
+        margin 0 0 1em 1em
+        float left
+        margin-right 4px
+        &:last-of-type
+          border-right none
+        a
+          display block
+          height 240px
+          padding .875em 1em
+          font 2em/1.25 source
+          color w90
+          background blue-dark
+          transition .15s ease-in-out all
+          &:hover
+            background  red
 
 section.simple
   text-align center
@@ -26,9 +59,13 @@ section.simple
     margin 0
     color blue-dark
     a
-      color blue-dark
+      color red
       &:hover
         text-decoration underline
+  &.cta,
+  &.load-more
+    a
+      color blue-dark
 
   ul
     li
@@ -41,7 +78,8 @@ section.simple
         &:hover
           text-decoration underline
 
-section.simple#learn-more
+section.simple#cta2
+  border-bottom 1px solid blue-border
   > ul
     width 560px
     margin 0 auto
@@ -56,4 +94,3 @@ section.simple#learn-more
           position absolute
           top 2px
           left 0
-

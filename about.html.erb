@@ -9,7 +9,7 @@
     <div class="content">
       <div class="text">
         <h1>This is Scrive</h1>
-        <p class="bold">A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi.</p>
+        <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi.</p>
         <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit. Praesent hendrerit porttitor urna sed suscipit.</p>
       </div>
       <%= render 'media/case-video.html.erb' %>
@@ -18,21 +18,27 @@
 
 
   <section id="team-profiles">
-    <h1>The Team</h1>
+    <header>
+      <h1>The Team</h1>
+    </header>
     <% (1..10).each do |i| %>
       <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
     <% end %>
   </section>
 
   <section id="board-profiles">
-    <h1>Board of Directors</h1>
+    <header>
+      <h1>Board of Directors</h1>
+    </header>
     <% (1..4).each do |i| %>
       <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
     <% end %>
   </section>
 
   <section id="investor-profiles">
-    <h1>Investors</h1>
+    <header>
+      <h1>Investors</h1>
+    </header>
     <% (1..5).each do |i| %>
       <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
     <% end %>

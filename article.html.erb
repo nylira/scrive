@@ -1,75 +1,67 @@
 <%= render 'partial/header.html.html.erb', :locals => { :body_class => 'article' } %>
 <%= render 'partial/header.site.html.erb' %>
 
-<div class="content site">
+<section class="article">
 
-  <section class="article">
-
-    <div class="sidebar-fixed">
-      <nav data-spy="affix" data-offset-top="0">
-        <div class="sidebar-container">
-          <header>
-            <h4>Related Articles</h4>
-          </header>
-          <ul>
-            <li><a href="article.html">Templates</a>
-            <li><a href="article.html">The Archive</a>
-            <li><a href="article.html">Filter System</a>
-            <li><a href="article.html">Another System</a>
-            <li><a href="article.html">Last System</a>
-          </ul>
-        </div>
-      </nav>
-    </div><!--sidebar-fixed-->
-
-    <article>
-      <header>
-        <h1>The core product</h1>
-      </header>
-      <div class="body">
-        <div class="bold">
-          <p>The final signed documents produced by the Scrive system are provable, Scrive or any third party, until the end of time.</p>
-        </div>
-        <h2>Our guiding principles of the product development</h2>
-        <p>To our knowledge there is no company in the world, except Scrive, that achieves the same level of legal quality of the final document. In fact, most e‐signing services produce signed documents that aren´t provable at all. Unless you want to  trust in the long‐term integrity of their database and their good will to give you access to the data whenever you will need it. We don't believe in trusting the unpredictable and we believe every company should have ownership of their own fate.</p>
-        <p>To design our core product to be in tune with these beliefs we used the following guiding principles:</p>
+  <div class="sidebar-fixed">
+    <nav data-spy="affix" data-offset-top="0">
+      <div class="sidebar-container">
+        <header>
+          <h4>Related Articles</h4>
+        </header>
         <ul>
-          <li>
-            <p class="bold">Redundant</p>
-            <p>The document should not lack evidence We don't want a customer to ever experience lack of evidence to prove the transaction.
-          </li>
-          <li>
-            <p class="bold">Durable</p>
-            <p>The document validity should be independent of time. We don't want a customer to ever experience that provability was compromised due to built in time constraints on evidence durability.</p>
-          </li>
-          <li>
-            <p class="bold">Independent</p>
-            <p>The document validity should be independent of time. We don't want a customer to ever experience that provability was compromised due to built in time constraints on evidence durability.</p>
-          </li>
+          <li><a href="article.html">Templates</a>
+          <li><a href="article.html">The Archive</a>
+          <li><a href="article.html">Filter System</a>
+          <li><a href="article.html">Another System</a>
+          <li><a href="article.html">Last System</a>
         </ul>
-        <div class="img w640">Full Image</div>
-        <h2>About the Scrive system and the document quality output</h2>
-        <p class="bold">After the document has been signed by all parties Scrive will perform the</p>
-        <ol>
-          <li>Append the verification page to the main PDF</li>
-          <li>Append a hidden evidence documentation as HTML file to the main PDF</li>
-          <li>Append a hidden digital structure documentation as HTML file to the main PDF.</li>
-          <li>Sign the final document with a digital signature.</li>
-        </ol>
-      </div><!--body-->
-      <footer>
-        <p class="time">Last edited <time="pudate">October 29th, 2012</time></p>
-      </footer>
-    </article>
-  </section>
+      </div>
+    </nav>
+  </div><!--sidebar-fixed-->
 
-  <section class="simple">
-    <ul>
-      <li><p>Try Scrive for free. No credit card required.</p></li>
-      <li><a class="button button-blue" href="#">Try 30 days free</a></li>
-    </ul>
-  </section>
-</div>
+  <article>
+    <header>
+      <h1>The core product</h1>
+    </header>
+    <div class="body">
+      <div class="bold">
+        <p>The final signed documents produced by the Scrive system are provable, Scrive or any third party, until the end of time.</p>
+      </div>
+      <h2>Our guiding principles of the product development</h2>
+      <p>To our knowledge there is no company in the world, except Scrive, that achieves the same level of legal quality of the final document. In fact, most e‐signing services produce signed documents that aren´t provable at all. Unless you want to  trust in the long‐term integrity of their database and their good will to give you access to the data whenever you will need it. We don't believe in trusting the unpredictable and we believe every company should have ownership of their own fate.</p>
+      <p>To design our core product to be in tune with these beliefs we used the following guiding principles:</p>
+      <ul>
+        <li>
+          <p class="bold">Redundant</p>
+          <p>The document should not lack evidence We don't want a customer to ever experience lack of evidence to prove the transaction.
+        </li>
+        <li>
+          <p class="bold">Durable</p>
+          <p>The document validity should be independent of time. We don't want a customer to ever experience that provability was compromised due to built in time constraints on evidence durability.</p>
+        </li>
+        <li>
+          <p class="bold">Independent</p>
+          <p>The document validity should be independent of time. We don't want a customer to ever experience that provability was compromised due to built in time constraints on evidence durability.</p>
+        </li>
+      </ul>
+      <div class="img w640">Full Image</div>
+      <h2>About the Scrive system and the document quality output</h2>
+      <p class="bold">After the document has been signed by all parties Scrive will perform the</p>
+      <ol>
+        <li>Append the verification page to the main PDF</li>
+        <li>Append a hidden evidence documentation as HTML file to the main PDF</li>
+        <li>Append a hidden digital structure documentation as HTML file to the main PDF.</li>
+        <li>Sign the final document with a digital signature.</li>
+      </ol>
+    </div><!--body-->
+    <footer>
+      <p class="time">Last edited <time="pudate">October 29th, 2012</time></p>
+    </footer>
+  </article>
+</section>
+
+<%= render 'partial/section.signup.html.erb' %>
 
 <%= render 'partial/footer.site.html.erb' %>
 <%= render 'partial/footer.html.html.erb' %>
