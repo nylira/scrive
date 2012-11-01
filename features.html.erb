@@ -2,10 +2,8 @@
 <%= render 'partial/header.site.html.erb' %>
 
 <div class="content site">
+
   <section class="features-grid">
-    <header>
-      <h1>Features</h1>
-    </header>
     <ul class="nav">
       <li><a href="#feature-integration">
         <div class="img">Icon</div>
@@ -46,13 +44,13 @@
     </ul>
   </section>
 
-  </section>
+<section class="features-list">
 
-  <section class="features-list">
-  <div class="sidebar">
-    <nav data-spy="affix" data-offset-top="930">
-      <div id="navbar">
+  <div class="sidebar-fixed">
+    <nav data-spy="affix" data-offset-top="832">
+      <div class="sidebar-container" id="navbar">
         <ul class="nav">
+          <li><a href="#top">All</a></li>
           <li><a href="#feature-integration">Integration</a></li>
           <li><a href="#feature-hardware">Hardware</a></li>
           <li><a href="#feature-security">Security</a></li>
@@ -65,7 +63,7 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </div><!--sidebar--fixed-->
 
   <div class="features">
     <section id="feature-integration">
@@ -73,8 +71,8 @@
         <h1>Integration</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Integration Feature"} %>
       <% end %>
     </section>
     <section id="feature-hardware">
@@ -82,8 +80,8 @@
         <h1>Hardware</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Hardware Feature"} %>
       <% end %>
     </section>
     <section id="feature-security">
@@ -91,8 +89,8 @@
         <h1>Security</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Security Feature"} %>
       <% end %>
     </section>
     <section id="feature-archive">
@@ -100,8 +98,8 @@
         <h1>The Archive</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Archive Feature"} %>
       <% end %>
     </section>
     <section id="feature-ux">
@@ -109,8 +107,8 @@
         <h1>User Experience</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "UX Feature"} %>
       <% end %>
     </section>
     <section id="feature-team">
@@ -118,8 +116,8 @@
         <h1>Our Team</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Team Feature"} %>
       <% end %>
     </section>
     <section id="feature-01">
@@ -127,8 +125,8 @@
         <h1>Another Feature</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Another Feature"} %>
       <% end %>
     </section>
     <section id="feature-02">
@@ -136,8 +134,8 @@
         <h1>Yet Another Feature</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Feature Title"} %>
       <% end %>
     </section>
     <section id="feature-03">
@@ -145,16 +143,14 @@
         <h1>Last Feature</h1>
         <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
       </header>
-      <% (1..6).each do |i| %>
-        <%= render 'media/feature.html.erb', :locals => { :title => "Just works&hellip;"} %>
+      <% (1..4).each do |i| %>
+        <%= render 'media/feature.html.erb', :locals => { :title => "Feature Title"} %>
       <% end %>
     </section>
   </div>
   </div>
 
 <%= render 'partial/section.signup.html.erb' %>
-
-</div>
 
 <%= render 'partial/footer.site.html.erb' %>
 <%= render 'partial/footer.html.html.erb' %>

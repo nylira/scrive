@@ -12,48 +12,34 @@ header.site
     background linear-gradient(top, m252, m243)
     position relative
     border-top 1px solid #aaa
+    height 6em
     ul
       clearfix()
-      height 4em
+      height 6em
       width 960px
-      margin 0 auto
       position relative
+      margin 0 auto
       li
         float left
         width 92px
         border-right 1px solid #ddd
+        height 3em
+        margin-top 1.5em
         a
           display block
-          font 1em/4 source
+          font 1em/6 source
           text-align center
           color dim
           text-shadow #fff 0 1px 0
-          height 68px
-          margin-top -5px
+          height 6*16px + 4px
+          margin-top -29px
           border-top 5px solid transparent
           &:hover
-            border-top-color blue-dark
+            border-top-color red
 
         &.login
           width 88px
           border-right none
-
-        &.loginx
-          padding .8em .5em
-
-          a.button-embed
-            margin 0
-            border none
-            font 1em/2.4 source
-            height 2.4em
-            padding 0 .5em
-            border 1px solid #ddd
-            border-radius 5px
-            background linear-gradient(top, hsl(215,30,50), blue-dark)
-            box-shadow #fff 0 1px 0px
-            color #fff
-            text-shadow b30 0 1px 0
-
 
         &#branding
           clearfix()
@@ -65,7 +51,7 @@ header.site
             width 320px
             text-align left
             img
-              margin 21px 1em
+              margin 37px 1em
 
           #tagline
             float left
@@ -81,8 +67,8 @@ body.pricing #page-pricing
 body.article #page-features
 body.about #page-about
 body.cases #page-cases
-  background linear-gradient(top, m255, m243)
-  color txt
+  color blue-dark
+  font-weight bold
   border-top-color blue-dark
 
 body.index
