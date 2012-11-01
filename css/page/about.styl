@@ -1,31 +1,46 @@
 body.about
+  .team.img
+    width 1120px
+    margin-left -80px
+    height 400px
+    line-height 400px
+    background #999
+
   section
     h1
       text-align center
       margin 0 0 2em
 
     &.intro
+      .content
+        clearfix()
 
-      .team.img
-        width 960px
-        height 320px
-        margin-bottom 3em
-        line-height 320px
+        .text
+          float left
+          width 480px
+          h1
+            font-size 3em
+            margin-bottom .2em
+            font-weight bold
+            text-align left
+            padding-right 40px
+        
+          p
+            color blue-medium
+            font-family source
+            font-size 1.25em
 
-      header
-        width 700px
-        float left
-        padding 0 4em 0 20px
-        h1
-          text-align left
-          margin-bottom 1em
-        p
-          padding 0
+        a.video
+          float left
+          width 400px
+          height 250px
+          margin-left 80px
+          margin-top 16px
+          .video
+            width 400px
+            height 250px
 
-      a.video
-        float right
-        margin-top 4em
-        margin-right 20px
+
 
   .vcard
     margin-left 20px

@@ -1,49 +1,50 @@
-a.video.w640
-  width 640px
-  display block
-
-  .video
+a.video
+  &.w640
     width 640px
-    height 360px
-    margin 0 0 .75em
-    position relative
-    border 1px solid #ddd
+    display block
 
-    .play
-      display block
-      background b50
-      height 50px
-      width 50px
-      border-radius 25px
-      absolute top 50% left 50%
-      margin-top -25px
-      margin-left -25px
-      padding 2px
-
-      span
-        display block
-        width 46px
-        height 46px
-        border-radius 22px
-        color #fff
-        border 2px solid #fff
-        font-size 1.5em
-        line-height 44px
-        padding-left 5px
-        text-align center
-
-  .description
-    text-align center
-    font-family source
-    color txt
-    .duration
-      color light
-
-  &:hover
     .video
+      width 640px
+      height 360px
+      margin 0 0 .75em
+      position relative
+      border 1px solid #ddd
+
       .play
+        display block
+        background b50
+        height 50px
+        width 50px
+        border-radius 25px
+        absolute top 50% left 50%
+        margin-top -25px
+        margin-left -25px
+        padding 2px
+
         span
-          background anchor
+          display block
+          width 46px
+          height 46px
+          border-radius 22px
+          color #fff
+          border 2px solid #fff
+          font-size 1.5em
+          line-height 44px
+          padding-left 5px
+          text-align center
 
     .description
-      color anchor
+      text-align center
+      font-family source
+      color txt
+      .duration
+        color light
+
+    &:hover
+      .video
+        .play
+          span
+            background anchor
+
+      .description
+        color anchor
