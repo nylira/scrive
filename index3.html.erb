@@ -1,12 +1,13 @@
 <%= render 'partial/header.html.html.erb', :locals => { :body_class => 'index index3' } %>
 <%= render 'partial/header.site.html.erb' %>
 
-<div class="content site use-cases">
-  <%= render 'partial/use-cases.tabs.html.erb' %>
+<div class="content site">
+  <%= render 'partial/use-case-video.html.erb' %>
 </div>
 
 <%= render 'partial/section.learn-more.html.erb' %>
 
+<div id="article-summaries">
 <div class="article summary one">
   <div class="container">
     <div class="text">
@@ -64,6 +65,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <div class="container load-more">

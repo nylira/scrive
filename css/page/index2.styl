@@ -1,129 +1,14 @@
 body.index2,
 body.index3
-  h1
-    font-size 2.5em
-  h2
-    margin-bottom 3em
 
-  .tab-container
-    ml 1em
-    min-height 480px
-
-    ul.tabs
-      width 480px
-      clearfix()
-      margin-bottom -1px
-      z-index 1
-      position relative
-      li
-        float left
-        width 160px
-        border-left 1px solid blue-border
-        background blue-bg
-        border-top 4px solid hsl(215,30,80)
-        color light
-        font 12px/3 sans
-        display block
-        padding 0 .75em
-        cursor pointer
-        &:hover
-          border-top-color hsl(215,30,70)
-
-        &.active 
-          border-bottom 1px solid #fff
-          bg #fff
-          color blue-dark
-          border-top 4px solid blue-dark
-
-    ul.tab-content
-      position relative
-      > li
-        display none
-        &.active
-          display block
-      ol
-        padding 0 0 1em
-        width 480px
-        li
-          border-top 1px solid blue-border
-          padding 1em 0
-          clearfix()
-          .left
-            p
-              font-size 14px
-              color light
-
-          &.step
-            &:hover
-              background hsl(215,30,98)
-              .num
-                color blue-dark
-              .event
-                display block
-
-            .num
-              font 2em/1.5 Source Sans Pro
-              color blue-medium
-              float left
-              text-align center
-              width 60px
-
-            .event
-              position absolute
-              background #000
-              z-index 1000
-              display none
-              p
-                color #fff
-                ta center
-                margin 1em
-                text-shadow none
-
-
-          &.video
-            border-bottom none
-            padding-top 1.25em
-            &:hover
-              background transparent
-            .video
-              background #000
-              width 120px
-              height 90px
-              float left
-              margin 0 1em
-            .left
-              width 320px - 16px
-
-      .model
-        position absolute
-        &.ipad
-          top -40px
-          right 50px
-        &.mbp
-          top -40px
-          right 0px
-        &.website
-          top -40px
-          right 50px
-
-    #tab-content-sign .event
-      top 9px
-      right 50px + 48px - 1px
-      height 384px
-      width 264px
-      border-radius 3px
-
-    #tab-content-send .event
-      top -14px
-      right 0
-      height 322px
-      width 500px - 149px
-      border-radius 2px
-
-    #tab-content-integrate .event
-      top -1px
-      right 40px + 11px
-      height 440px
-      border-radius 0 0 3px 3px
-      width 358px
-
+  section
+    header
+      text-align center
+      width 720px
+      margin 0 auto 48px
+      h2
+        padding 0 1em
+    .content
+      text-align center
+      a.video
+        margin 0 auto 3em
