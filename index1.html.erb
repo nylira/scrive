@@ -1,8 +1,7 @@
-<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'index index3' } %>
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'index index1' } %>
 <%= render 'partial/header.site.html.erb' %>
-
-<%= render 'partial/section.use-case-video.html.erb' %>
-<%= render 'partial/section.cta2.html.erb' %>
+<%= render 'partial/section.case-video.html.erb' %>
+<%= render 'partial/section.learn-more.html.erb' %>
 
 <section class="article-summaries">
 <div class="article summary one">
@@ -13,10 +12,7 @@
         <p>Scrive makes it easy for people to discover and learn about your business. In minutes customize a rewards program that gets people in the door and keeps them coming back. <a class="read-more" href="article.html">Read more &rsaquo;</a></p>
       </div><!--body-->
     </div><!--text-->
-    <div class="model ipad max">
-      <div class="camera"></div>
-      <div class="screen"></div>
-    </div>
+    <%= render 'media/ipad.html.erb', :locals => { :size => 'max' } %>
   </div>
 </div>
 
@@ -28,22 +24,13 @@
         <p>Scrive makes it easy for people to discover and learn about your business. In minutes customize a rewards program that gets people in the door and keeps them coming back. <a class="read-more" href="article.html">Read more &rsaquo;</a></p>
       </div><!--body-->
     </div><!--text-->
-    <div class="model mbp max">
-      <div class="lid">
-        <div class="screen"></div>
-      </div>
-      <div class="base"></div>
-      <div class="bottom"></div>
-    </div>
+    <%= render 'media/mbp.html.erb', :locals => { :size => 'max' } %>
   </div>
 </div>
 
 <div class="article summary three">
   <div class="container">
-    <div class="model ipad max">
-      <div class="camera"></div>
-      <div class="screen"></div>
-    </div>
+    <%= render 'media/ipad.html.erb', :locals => { :size => 'max' } %>
     <div class="text">
       <h2>Attract and reward</h2>
       <div class="body">

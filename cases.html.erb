@@ -1,33 +1,16 @@
 <%= render 'partial/header.html.html.erb', :locals => { :body_class => 'cases' } %>
 <%= render 'partial/header.site.html.erb' %>
 
-<div class="content site">
-
-  <section class="icon-grid">
-    <ul class="nav">
-      <li><a href="#case-integrate">
-        <div class="img">Icon</div>
-        <span class="label">Sign on touch device</span>
-      </a></li>
-      <li><a href="#case-send">
-        <div class="img">Icon</div>
-        <span class="label">Send for signature</span>
-      </a></li>
-      <li><a href="#case-integrate">
-        <div class="img">Icon</div>
-        <span class="label">Integrate on website</span>
-      </a></li>
-    </ul>
-  </section>
-
 <section class="fixed-nav-list">
 
   <div class="sidebar-fixed">
-    <nav data-spy="affix" data-offset-top="432">
+    <nav data-spy="affix" data-offset-top="0">
       <div class="sidebar-container" id="navbar">
+        <header>
+          <h4>Customer Cases</h4>
+        </header>
         <ul class="nav">
-          <li><a href="#top">All</a></li>
-          <li><a href="#case-sign">Sign on touch device</a></li>
+          <li><a href="#top">Sign on touch device</a></li>
           <li><a href="#case-send">Send for signature</a></li>
           <li><a href="#case-integrate">Integrate on website</a></li>
         </ul>
@@ -35,7 +18,7 @@
     </nav>
   </div><!--sidebar-fixed-->
 
-  <div class="features">
+  <div class="articles">
     <section id="case-sign">
       <header>
         <h1>Sign on touch device</h1>
@@ -67,7 +50,7 @@
       <% end %>
     </section>
   </div>
-  </div>
+</section>
 
 <%= render 'partial/section.signup.html.erb' %>
 

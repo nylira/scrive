@@ -18,16 +18,21 @@
   bottom 388px
 
 body
-  background #f2f2f2
-  min-height 100%
-
-.wrapper
   background #fff
-  width 1120px
-  padding 100px 80px 0
-  margin 0 auto
-  min-height 100%
-  box-shadow b20 0 0 .25em
+
+  .wrapper
+    width 1120px
+    padding 100px 80px 0
+    margin 0 auto
+
+  &.about
+    background #f2f2f2 url(../img/bg-texture.png)
+
+    .wrapper
+      background #fff
+      width 1122px
+      border-left 1px solid #ddd
+      border-right 1px solid #ddd
 
 .container
   width 960px

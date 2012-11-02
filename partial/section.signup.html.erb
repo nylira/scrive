@@ -2,16 +2,19 @@
   <header>
     <h1>Select your use case. Start right away.</h1>
   </header>
-  <nav>
+  <nav class="case-nav small">
     <ul>
       <li><a href="pricing.html">
-        <span class="label">Sign on touch device &rsaquo;</span>
+        <%= render 'media/ipad.html.erb', :locals => { :size => 'small' } %>
+        <span class="h3">Sign on touch device &rsaquo;</span>
       </a></li>
       <li><a href="pricing.html">
-        <span class="label">Send for signature &rsaquo;</span>
+        <%= render 'media/mbp.html.erb', :locals => { :size => 'small' } %>
+        <span class="h3">Send for signature &rsaquo;</span>
       </a></li>
       <li><a href="pricing.html">
-        <span class="label">Integrate into website &rsaquo;</span>
+        <%= render 'media/website.html.erb', :locals => { :size => 'small' } %>
+        <span class="h3">Integrate into website &rsaquo;</span>
       </a></li>
     </ul>
   </nav>

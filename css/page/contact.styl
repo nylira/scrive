@@ -1,0 +1,49 @@
+body.contact
+  .wrapper
+    width 100%
+    padding 100px 0 0
+    position relative
+
+    .contact-map
+      width 100%
+      iframe
+        margin 0
+        border-bottom 1px solid #ddd
+
+    .contact-boxes
+      position absolute
+      top 800px - 140px - 48px
+      left 50%
+      margin-left -480px
+      width 960px
+      clearfix()
+      padding 1.5em 1.5em 0 0
+
+      .box
+        float left
+        width 280px
+        height 140px
+        background #fff
+        margin 0 0 1.5em 1.5em
+        padding .75em 1em
+        border 2px solid blue-border
+        text-align center
+        header
+          padding-bottom .5em
+          border-bottom 1px solid blue-border
+          margin-bottom .75em
+          h2
+            font-size 1em
+            color blue-medium
+        .content
+          a, ul
+            font 1.25em/1.25 source
+            color txt
+          a
+            &:hover
+              text-decoration underline
+
+    footer.site
+      margin 0 auto
+      width 960px
+      padding-top 1.5em

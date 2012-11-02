@@ -1,0 +1,93 @@
+<%= render 'partial/header.html.html.erb', :locals => { :body_class => 'legal' } %>
+<%= render 'partial/header.site.html.erb' %>
+
+<section class="top">
+  <header>
+    <h1 class="big">Scrive is dedicated to the delivery of the highest quality digital documents in the world.</h1>
+  </header>
+  <div class="content">
+    <ul>
+      <li>
+        <h2>Redundant</h2>
+        <p>The document should not lack evidence.</p>
+      </li>
+      <li>
+        <h2>Durable</h2>
+        <p>The document validity should be independent of time due to built in time constraints on evidence durability.</p>
+      </li>
+      <li>
+        <h2>Independent</h2>
+        <p>The document validity should be independent of third parties.</p>
+      </li>
+      <li>
+        <h2>Available</h2>
+        <p>The document legal usefulness should be independent of resources.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="top">
+  <header>
+    <h1 class="big">Document quality of Scrive</h1>
+    <p>&ldquo;<q>The final signed documents produced by the Scrive system are provable, independently of Scrive or any third party, until the end of time.</q>&rdquo;</p>
+  </header>
+  <div class="content">
+    <div class="img table">
+      Document quality comparison table
+    </div>
+  </div>
+</section>
+
+<section class="fixed-nav-list">
+
+<div class="sidebar-fixed">
+  <nav data-spy="affix" data-offset-top="1488">
+    <div class="sidebar-container" id="navbar">
+      <header>
+        <h4>Scrive Legal</h4>
+      </header>
+      <ul class="nav">
+        <li><a href="#legal-one">The core product</a></li>
+        <li><a href="#legal-two">The Scrive system</a></li>
+        <li><a href="#legal-three">Prior system actions</a></li>
+      </ul>
+    </div>
+  </nav>
+</div><!--sidebar-fixed-->
+
+<div class="articles">
+  <section id="legal-one">
+    <header>
+      <h1>The Core Product</h1>
+      <p>The final signed documents produced by the Scrive system are provable, independently of Scrive or any third party, until the end of time.</p>
+    </header>
+    <%= render 'media/legal.html.erb', :locals => { :title => "Our guiding principles of the core product development"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "Our guiding principles of consultancy"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "Legal considerations whenc hoosing the right solution"} %>
+  </section>
+  <section id="legal-two">
+    <header>
+      <h1>Scrive system and document quality output</h1>
+      <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+    </header>
+    <%= render 'media/legal.html.erb', :locals => { :title => "The verification page"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "The evidence documentation"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "The evidence log"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "The digital signature documentation"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "The digital signature"} %>
+  </section>
+  <section id="legal-three">
+    <header>
+      <h1>Prior system actions recorded</h1>
+      <p>All our features are built on the Haskell framework, a rock-solid code-base perfected over time through blood, sweat and tears.</p>
+    </header>
+    <%= render 'media/legal.html.erb', :locals => { :title => "Source code stamping for future reference"} %>
+    <%= render 'media/legal.html.erb', :locals => { :title => "Time drift records and prevention"} %>
+  </section>
+</div>
+</section>
+
+<%= render 'partial/section.signup.html.erb' %>
+<%= render 'partial/footer.site.html.erb' %>
+<%= render 'partial/footer.html.html.erb' %>
