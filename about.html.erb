@@ -1,54 +1,50 @@
 <%= render 'partial/header.html.html.erb', :locals => { :body_class => 'about' } %>
 <%= render 'partial/header.site.html.erb' %>
 
-<div class="content site">
+<div class="banner img">Photo 1120x400</div>
 
-  <div class="team img">Photo 1120x400</div>
-
-  <section class="intro">
-    <div class="content">
-      <div class="text">
-        <h1>This is Scrive</h1>
-        <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi.</p>
-        <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit. Praesent hendrerit porttitor urna sed suscipit.</p>
-      </div>
-      <%= render 'media/case-video.html.erb' %>
+<section class="intro">
+  <div class="content">
+    <div class="text">
+      <h1>This is Scrive</h1>
+      <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi.</p>
+      <p>A paragraph about Scrive. Duis porta accumsan sem, in gravida erat bibendum quis. Suspendisse ut felis mi. Praesent hendrerit porttitor urna sed suscipit. Praesent hendrerit porttitor urna sed suscipit.</p>
     </div>
-  </section>
+    <%= render 'media/case-video.html.erb' %>
+  </div>
+</section>
 
 
-  <section id="team-profiles">
-    <header>
-      <h1>The Team</h1>
-    </header>
-    <% (1..10).each do |i| %>
-      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
-    <% end %>
-  </section>
+<section id="team-profiles">
+  <header>
+    <h1>The Team</h1>
+  </header>
+  <% (1..10).each do |i| %>
+    <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Team Member", :email => "name@scrive.com", :tel => "+46 704 56 04 04"} %>
+  <% end %>
+</section>
 
-  <section id="board-profiles">
-    <header>
-      <h1>Board of Directors</h1>
-    </header>
-    <% (1..4).each do |i| %>
-      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
-    <% end %>
-  </section>
+<section id="board-profiles">
+  <header>
+    <h1>Board of Directors</h1>
+  </header>
+  <% (1..4).each do |i| %>
+    <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko", :category => "Board Member"} %>
+  <% end %>
+</section>
 
-  <section id="investor-profiles">
-    <header>
-      <h1>Investors</h1>
-    </header>
-    <% (1..5).each do |i| %>
-      <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
-    <% end %>
-  </section>
+<section id="investor-profiles">
+  <header>
+    <h1>Investors</h1>
+  </header>
+  <% (1..5).each do |i| %>
+    <%= render 'media/vcard.html.erb', :locals => { :fn => "Lukas Duczko"}, :category => "Investor" %>
+  <% end %>
+</section>
 
-  <section class="simple">
-    <p>Are you a nice person stuffed with skills? <a href="#">Apply for a job with us.</a>
-  </section>
-
-</div>
+<section class="simple">
+  <p>Are you a nice person stuffed with skills? <a href="#">Apply for a job with us.</a>
+</section>
 
 <%= render 'partial/footer.site.html.erb' %>
 <%= render 'partial/footer.html.html.erb' %>
