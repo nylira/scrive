@@ -1,40 +1,42 @@
 body.index
-
-  section.top
+  height 100%
+  .wrapper
+    height 100%
+  section
     border-bottom none
 
     header
-      text-align center
       margin 0 auto 48px
 
+    &.top
+      padding-bottom 4em
+
+    &.customer-logos
+      border-top 1px solid #ddd
+      width 1120px
+      margin-left -80px
+      img
+        opacity .75
+        margin 0 80px
+        transition .15s ease-in-out all
+
 body.index1
+  section
+    border-bottom 1px solid blue-border
 
   nav.case-nav
     mt 2em
 
+  a.video
+    margin-left -80px
+
   section.top
-    border-bottom 1px solid blue-border
     padding-bottom 2em
-    header
-      width 800px
 
-    .content
-      text-align center
-      a.video
-        margin 0 auto 4.5em
-
-      .block
-        padding 1em 2em
-        width 400px
-        margin 0 auto 48px
-        a.button
-          margin 0 0 .5em
-          width 100%
-        p
-          color blue-medium
-          border 1px solid blue-border
-          margin 0
-          padding .75em 1em
+  a.button
+    display block
+    margin 0 auto 4.5em
+    width 320px
 
   section.article-summaries
     padding 0

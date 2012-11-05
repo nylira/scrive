@@ -8,47 +8,62 @@
   <h2 class="big">Choose a plan that will fit your needs.</h2>
 </header>
 
-<div class="plan team">
-  <div class="title">
-    <h2>Pad <span class="amp">&amp;</span> Touch Signing</h2>
-    <p>For sales and administrative teams.</p>
-  </div>
-  <div class="cost">
-    <span class="price">299<span class="unit">kr</span></span>
-    <p>per user per month</p>
-  </div>
-  <div class="action">
-    <a href="#" class="button button-blue">Sign Up</a>
-  </div>
-</div>
-
-<div class="plan integration">
-  <div class="title">
-    <h2>Website Integration</h2>
-    <p>Signable forms integrated into your webpage.</p>
-  </div>
-  <div class="cost">
-    <span class="price">1.000<span class="unit">kr</span></span>
-    <p>per month <span class="amp">&amp;</span> 25kr / doc</p>
-  </div>
-  <div class="action">
-    <a href="#" class="button button-blue">Contact</a>
+<div class="plan-container signing">
+  <div class="plan">
+    <div class="features">
+      <div class="title">
+        <h2>Pad <span class="amp">&amp;</span> Touch Signing</h2>
+        <p>For sales and administrative teams.</p>
+      </div>
+      <div class="cost">
+        <span class="price">299<span class="unit">kr</span></span>
+        <p>per user per month</p>
+      </div>
+      <div class="action">
+        <a class="button button-blue action-sign-up">Sign Up</a>
+      </div>
+    </div><!--features-->
+    <%= render 'partial/form.signup.html.erb'%>
   </div>
 </div>
 
-<div class="plan enterprise">
-  <div class="title">
-    <h2>Enterprise</h2>
-    <p>Consultation and tailored solutions</p>
-  </div>
-  <div class="cost">
-    <span class="price">&ndash;</span>
-    <p>get a quote today</p> 
-  </div>
-  <div class="action">
-    <a href="#" class="button button-blue">Contact</a>
+<div class="plan-container integration">
+  <div class="plan">
+    <div class="features">
+      <div class="title">
+        <h2>Website Integration</h2>
+        <p>Signable forms integrated into your webpage.</p>
+      </div>
+      <div class="cost">
+        <span class="price">1.000<span class="unit">kr</span></span>
+        <p>per month <span class="amp">&amp;</span> 25kr / doc</p>
+      </div>
+      <div class="action">
+        <a class="button button-blue action-sign-up">Sign Up</a>
+      </div>
+    </div>
+    <%= render 'partial/form.signup.html.erb'%>
   </div>
 </div>
+
+<div class="plan-container enterprise">
+  <div class="plan">
+    <div class="features">
+      <div class="title">
+        <h2>Enterprise</h2>
+        <p>Consultation and tailored solutions</p>
+      </div>
+      <div class="cost">
+        <span class="price">&ndash;</span>
+        <p>get a quote today</p> 
+      </div>
+      <div class="action">
+        <a href="contact.html" class="button button-blue">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </section>
 

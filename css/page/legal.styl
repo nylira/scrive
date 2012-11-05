@@ -32,10 +32,52 @@ body.legal
             padding 0 0 1em
           p
             margin 0
-      .img.table
-        background blue-medium
-        width 960px - 32px
-        margin 0 16px
-        height 400px
-        font bold 3em/400px source
-        color w50
+      table
+        width 1122px
+        margin-left -81px
+        border-top 1px solid #ddd
+        border-left 1px solid #ddd
+        tr
+          th
+            p 
+              margin 0 0 .5em
+              &.bold
+                color blue-dark
+                font-weight normal
+          &.scrive
+            background blue-bg
+          th, td
+            border-bottom 1px solid #ddd
+            border-right 1px solid #ddd
+            width 124.4px
+            font 11px/1.5 Verdana
+            color blue-medium
+            padding 1em .5em
+            text-align center
+            &.have
+              color blue-bg
+              font bold 14px/2.4 source
+              &.must
+                background hsl(215,30,40)
+                border-right-color hsl(215,30,40)
+              &.should
+                background hsl(215,30,50)
+                border-right-color hsl(215,30,50)
+              &.good
+                background hsl(215,30,60)
+            &.label
+              font bold 14px/1.5 source
+              color blue-dark
+            &.green, &.red
+              font bold 2em/1.5 source
+            &.green
+              color blue-dark
+              &.text
+                font 11px/1.5 Verdana
+            &.orange
+              color red
+            &.red
+              color red
+            &.na
+              font bold 2em/1.5 source
+              color #ddd
